@@ -7,18 +7,27 @@
 </head>
 <body>
     <div class="wrapper">
+        <h1>EverydayToDo</h1>
+        <input id="todo">
+
+        <button id="todo-bt" onclick="task()">作成</button>
+        <ul id="task-list">
+        </ul>
+        <button id="endbtn">完了</button>
         <!-- xxxx年xx月を表示部分 -->
         <h1 id="header"></h1>
-    
+
         <!-- ボタンクリックで月移動の部分 -->
         <div id="next-prev-button">
             <button id="prev" onclick="prev()">←</button>
             <button id="next" onclick="next()">→</button>
         </div>
-    
+
         <!-- カレンダー表示部分 -->
         <div id="calendar"></div>
     </div>
     <script src="index.js"></script>
+    <script src="index2.js"></script>
+    <script src="index3.js"></script>
 </body>
 </html>
