@@ -7,13 +7,15 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1>EverydayToDo</h1>
-        <input id="todo">
+        <div class="wrapper-item">
+            <h1>EverydayToDo</h1>
+            <input id="todo">
+            <button id="todo-bt" onclick="task()">作成</button>
+            <ul id="task-list">
+            </ul>
+            <button id="endbtn">完了</button>
+        </div>
 
-        <button id="todo-bt" onclick="task()">作成</button>
-        <ul id="task-list">
-        </ul>
-        <button id="endbtn">完了</button>
         <!-- xxxx年xx月を表示部分 -->
         <h1 id="header"></h1>
 
