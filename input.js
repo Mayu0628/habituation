@@ -22,7 +22,8 @@ function task (){
             const Checked = document.querySelectorAll('.check:checked');
             const numChecked = Checked.length;
         if (numCheckboxes === numChecked) {
-            window.location.href = 'location.html'
+            document.getElementById('today').style.color='pink';
+            // window.location.href = 'location.html'
         }
         });
     };
