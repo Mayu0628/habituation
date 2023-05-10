@@ -22,7 +22,17 @@ function task (){
             const Checked = document.querySelectorAll('.check:checked');
             const numChecked = Checked.length;
         if (numCheckboxes === numChecked) {
-            window.location.href = 'location.html'
+            const cookie = Cookies.set('check',true);
+            console.log(cookie);
+            document.getElementById('today').style.color='pink';
+            // window.location.href = 'location.html';
         }
         });
-    };
+        // ページが読み込まれたときにCookieをチェック
+        window.onload = () => {
+            const Checked = Cookies.get('Checked');
+            if (Checked === 'true') {
+            document.getElementById('today').style.color = 'pink';
+        }
+    }
+};
