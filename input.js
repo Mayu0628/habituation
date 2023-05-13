@@ -18,12 +18,23 @@ function task (){
 
         endbtn.addEventListener('click', () => {
             const Checkboxes = document.querySelectorAll('.check');
+            // チェックボックスの個数を取得
             const numCheckboxes = Checkboxes.length;
             const Checked = document.querySelectorAll('.check:checked');
+            // チェックされた個数を取得
             const numChecked = Checked.length;
         if (numCheckboxes === numChecked) {
+            const cookie = Cookies.set('check',true);
+            console.log(cookie);
             document.getElementById('today').style.color='pink';
-            // window.location.href = 'location.html'
+            // window.location.href = 'location.html';
         }
         });
-    };
+        // ページが読み込まれたときにCookieをチェック
+        window.onload = () => {
+            const Checked = Cookies.get('Checked');
+            if (Checked === 'true') {
+            document.getElementById('today').style.color = 'pink';
+        }
+    }
+};
