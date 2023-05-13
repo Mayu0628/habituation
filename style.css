@@ -87,23 +87,40 @@ td.today {
     padding: 0 20px 20px 20px;
 }
 
-.img {
-
-}
-
 .endbt {
     width: 150px;
     height: 50px;
     font-size: 20px;
+    margin: 0 20px;
+}
+
+button {
     color: #fff;
     background-color: #D65E72;
     border: none;
     border-radius: 100vh;
-    margin: 0 20px;
     cursor: pointer;
     cursor: hand;
 }
 
-.endbt:hover {
+button:hover {
     background-color: pink;
+}
+
+/* index.html */
+/* wrapper-item */
+.wrapper-item {
+    text-align: center;
+    margin: 30px;
+}
+
+.wrapper-item input {
+    padding: 5px;
+    width: 200px;
+}
+
+.wrapper-item button {
+    margin: 10px;
+    font-size: 15px;
+    padding: 5px;
 }
