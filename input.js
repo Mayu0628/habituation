@@ -24,17 +24,13 @@ function task (){
             // チェックされた個数を取得
             const numChecked = Checked.length;
         if (numCheckboxes === numChecked) {
-            const cookie = Cookies.set('check',true);
-            console.log(cookie);
-            document.getElementById('today').style.color='pink';
+            const cookie = document.getElementById('today').style.color='pink';
+            Cookies.set('cookie_name', cookie);
             // window.location.href = 'location.html';
         }
-        });
-        // ページが読み込まれたときにCookieをチェック
-        window.onload = () => {
-            const Checked = Cookies.get('Checked');
-            if (Checked === 'true') {
-            document.getElementById('today').style.color = 'pink';
         }
-    }
+        );
+        window.onload = function() {
+            Cookies.get('cookie_name');
+        };
 };

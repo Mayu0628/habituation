@@ -1,0 +1,14 @@
+tr {
+    text-align: center;
+  }
+
+  th,.highlight {
+    background-color: #4169E1;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  td {
+    color: black;
+  }
